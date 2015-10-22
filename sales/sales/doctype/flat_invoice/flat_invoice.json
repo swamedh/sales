@@ -1,16 +1,18 @@
 {
  "allow_copy": 0, 
- "allow_import": 1, 
+ "allow_import": 0, 
  "allow_rename": 0, 
  "autoname": "naming_series:", 
  "creation": "2015-09-21 12:36:10.490074", 
  "custom": 0, 
  "docstatus": 0, 
  "doctype": "DocType", 
- "document_type": "Master", 
+ "document_type": "Setup", 
  "fields": [
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "cutomer_information", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -26,10 +28,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "naming_series", 
    "fieldtype": "Select", 
    "hidden": 0, 
@@ -38,7 +43,7 @@
    "in_list_view": 1, 
    "label": "Series", 
    "no_copy": 0, 
-   "options": "SINV-", 
+   "options": "FI-", 
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -46,10 +51,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "customer_name_link", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -66,10 +74,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "customer_name", 
    "fieldtype": "Data", 
    "hidden": 1, 
@@ -85,10 +96,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "cutomer_id", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -104,10 +118,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "col1", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
@@ -122,10 +139,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "contact_number", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -141,10 +161,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "email_id", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -160,10 +183,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "booking_date", 
    "fieldtype": "Date", 
    "hidden": 0, 
@@ -179,10 +205,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "flat_information", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -191,7 +220,6 @@
    "in_list_view": 0, 
    "label": "Flat Information", 
    "no_copy": 0, 
-   "options": "icon-shopping-cart", 
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -199,10 +227,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "invoice_flat_no", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -219,10 +250,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "flat_no", 
    "fieldtype": "Data", 
    "hidden": 1, 
@@ -238,10 +272,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "invoice_floor", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -257,10 +294,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "invoice_flat_type", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -276,10 +316,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "area", 
    "fieldtype": "Float", 
@@ -296,10 +339,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "basic_rate", 
    "fieldtype": "Currency", 
@@ -309,7 +355,6 @@
    "in_list_view": 0, 
    "label": "Basic Rate", 
    "no_copy": 0, 
-   "options": "currency", 
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -317,10 +362,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "basic_cost", 
    "fieldtype": "Currency", 
@@ -330,7 +378,6 @@
    "in_list_view": 0, 
    "label": "Basic Cost", 
    "no_copy": 0, 
-   "options": "currency", 
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -338,18 +385,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
-  }, 
-  {
-   "default": "0.000", 
-   "fieldname": "deposit_rate", 
-   "fieldtype": "Float", 
-   "label": "Deposit Rate", 
-   "permlevel": 0, 
-   "precision": ""
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "column_break_18", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
@@ -364,20 +406,37 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "description": "6.5% of Baic Cost", 
    "fieldname": "deposit_amount", 
    "fieldtype": "Currency", 
+   "hidden": 0, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
    "label": "Deposit Amount", 
+   "no_copy": 0, 
    "permlevel": 0, 
    "precision": "", 
-   "read_only": 1
+   "print_hide": 0, 
+   "read_only": 1, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "plc_rate", 
    "fieldtype": "Currency", 
@@ -394,10 +453,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "pref_loc_charges", 
    "fieldtype": "Currency", 
@@ -414,10 +476,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "frc_rate", 
    "fieldtype": "Currency", 
@@ -434,10 +499,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "floor_rise_charges", 
    "fieldtype": "Currency", 
@@ -454,26 +522,36 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
-  }, 
-  {
-   "default": "0.00", 
-   "fieldname": "net_total", 
-   "fieldtype": "Currency", 
-   "label": "Net Total", 
-   "permlevel": 0, 
-   "precision": "", 
-   "read_only": 1
-  }, 
-  {
-   "fieldname": "sold", 
-   "fieldtype": "Int", 
-   "label": "Sold", 
-   "permlevel": 0, 
-   "precision": ""
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
+   "default": "0.00", 
+   "fieldname": "net_total", 
+   "fieldtype": "Currency", 
+   "hidden": 0, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
+   "label": "Net Total", 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "read_only": 1, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
+  }, 
+  {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "other_charges_section", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -489,10 +567,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "charges", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -501,7 +582,7 @@
    "in_list_view": 0, 
    "label": "Charges", 
    "no_copy": 0, 
-   "options": "Sales Taxes and Charges Master", 
+   "options": "Sales Taxes and Charges Template", 
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -509,19 +590,36 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
-  }, 
-  {
-   "default": "0", 
-   "fieldname": "flag1", 
-   "fieldtype": "Int", 
-   "hidden": 0, 
-   "label": "Charges Flag", 
-   "permlevel": 0, 
-   "precision": ""
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
+   "default": "0", 
+   "fieldname": "flag1", 
+   "fieldtype": "Int", 
+   "hidden": 1, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
+   "label": "Charges Flag", 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "read_only": 0, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
+  }, 
+  {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "charges_table", 
    "fieldtype": "Table", 
    "hidden": 0, 
@@ -538,10 +636,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "section_break_30", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -556,10 +657,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "col2", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
@@ -574,16 +678,34 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
-  }, 
-  {
-   "fieldname": "column_break_29", 
-   "fieldtype": "Column Break", 
-   "permlevel": 0, 
-   "precision": ""
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
+   "fieldname": "column_break_29", 
+   "fieldtype": "Column Break", 
+   "hidden": 0, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "read_only": 0, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
+  }, 
+  {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "other_charges_total", 
    "fieldtype": "Currency", 
@@ -600,10 +722,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "description": "Basic Cost + Other charges total", 
    "fieldname": "total_a", 
@@ -621,10 +746,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "section_break_31", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -639,10 +767,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "discounts", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -651,7 +782,7 @@
    "in_list_view": 0, 
    "label": "Discounts", 
    "no_copy": 0, 
-   "options": "Sales Taxes and Charges Master", 
+   "options": "Sales Taxes and Charges Template", 
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -659,19 +790,36 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
-  }, 
-  {
-   "default": "0", 
-   "fieldname": "flag2", 
-   "fieldtype": "Int", 
-   "hidden": 0, 
-   "label": "Discount Flag", 
-   "permlevel": 0, 
-   "precision": ""
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
+   "default": "0", 
+   "fieldname": "flag2", 
+   "fieldtype": "Int", 
+   "hidden": 1, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
+   "label": "Discount Flag", 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "read_only": 0, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
+  }, 
+  {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "discounts_table", 
    "fieldtype": "Table", 
    "hidden": 0, 
@@ -688,10 +836,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "section_break_35", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -706,10 +857,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "column_break_35", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
@@ -724,16 +878,34 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
-  }, 
-  {
-   "fieldname": "column_break_38", 
-   "fieldtype": "Column Break", 
-   "permlevel": 0, 
-   "precision": ""
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
+   "fieldname": "column_break_38", 
+   "fieldtype": "Column Break", 
+   "hidden": 0, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "read_only": 0, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
+  }, 
+  {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "discounts_total", 
    "fieldtype": "Currency", 
@@ -750,10 +922,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "fieldname": "total_b", 
    "fieldtype": "Currency", 
@@ -770,10 +945,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "section_break_37", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -788,10 +966,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "taxes", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -800,7 +981,7 @@
    "in_list_view": 0, 
    "label": "Taxes", 
    "no_copy": 0, 
-   "options": "Sales Taxes and Charges Master", 
+   "options": "Sales Taxes and Charges Template", 
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -808,19 +989,36 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
-  }, 
-  {
-   "default": "0", 
-   "fieldname": "flag3", 
-   "fieldtype": "Int", 
-   "hidden": 0, 
-   "label": "Taxes Flag", 
-   "permlevel": 0, 
-   "precision": ""
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
+   "default": "0", 
+   "fieldname": "flag3", 
+   "fieldtype": "Int", 
+   "hidden": 1, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
+   "label": "Taxes Flag", 
+   "no_copy": 0, 
+   "permlevel": 0, 
+   "precision": "", 
+   "print_hide": 0, 
+   "read_only": 0, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
+  }, 
+  {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "taxes_table", 
    "fieldtype": "Table", 
    "hidden": 0, 
@@ -837,10 +1035,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "section_break_40", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -855,10 +1056,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "column_break_42", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
@@ -873,13 +1077,16 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "description": "", 
-   "fieldname": "taxes_total", 
+   "fieldname": "total_c", 
    "fieldtype": "Currency", 
    "hidden": 0, 
    "ignore_user_permissions": 0, 
@@ -894,13 +1101,16 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "description": "Net Total", 
-   "fieldname": "total_c", 
+   "fieldname": "total_b_c2", 
    "fieldtype": "Currency", 
    "hidden": 0, 
    "ignore_user_permissions": 0, 
@@ -915,10 +1125,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "column_break_34", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
@@ -933,10 +1146,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "description": "Less with Net Total", 
    "fieldname": "round_off", 
@@ -954,10 +1170,13 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "default": "0.00", 
    "description": "Grand Total", 
    "fieldname": "rounded_total", 
@@ -975,26 +1194,52 @@
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
-   "set_only_once": 0
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "outstanding_amount", 
    "fieldtype": "Currency", 
    "hidden": 1, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
    "label": "Outstanding Amount", 
+   "no_copy": 0, 
    "permlevel": 0, 
    "precision": "", 
-   "read_only": 1
+   "print_hide": 0, 
+   "read_only": 1, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
   }, 
   {
+   "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "amended_from", 
    "fieldtype": "Link", 
+   "hidden": 0, 
+   "ignore_user_permissions": 0, 
+   "in_filter": 0, 
+   "in_list_view": 0, 
    "label": "Amended From", 
    "no_copy": 1, 
    "options": "Flat Invoice", 
    "permlevel": 0, 
    "print_hide": 1, 
-   "read_only": 1
+   "read_only": 1, 
+   "report_hide": 0, 
+   "reqd": 0, 
+   "search_index": 0, 
+   "set_only_once": 0, 
+   "unique": 0
   }
  ], 
  "hide_heading": 0, 
@@ -1004,7 +1249,7 @@
  "is_submittable": 1, 
  "issingle": 0, 
  "istable": 0, 
- "modified": "2015-10-19 11:24:48.568208", 
+ "modified": "2015-10-22 09:42:23.989304", 
  "modified_by": "Administrator", 
  "module": "sales", 
  "name": "Flat Invoice", 
@@ -1019,13 +1264,15 @@
    "delete": 1, 
    "email": 1, 
    "export": 1, 
-   "import": 1, 
+   "if_owner": 0, 
+   "import": 0, 
    "permlevel": 0, 
    "print": 1, 
    "read": 1, 
    "report": 1, 
    "role": "Administrator", 
    "set_user_permissions": 0, 
+   "share": 0, 
    "submit": 1, 
    "write": 1
   }
