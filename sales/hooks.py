@@ -13,22 +13,16 @@ app_version = "0.0.1"
 
 doc_events = {
 	"Flat Invoice": {
-		#"before_save": "sales.sales.doctype.flat_invoice.flat_invoice.validateDoc",
-		"validate":"sales.sales.doctype.flat_invoice.flat_invoice.beforeInsertDoc",
-		#"validate":	"sales.sales.doctype.flat_invoice.flat_invoice.validateDoc",	
-		#"validate":	"sales.sales.doctype.flat_invoice.flat_invoice.insertData",	
-		#"on_submit": "sales.sales.doctype.flat_invoice.flat_invoice.submitDoc",
-		#"before_submit": "sales.sales.doctype.flat_invoice.flat_invoice.insertData",
-		#"on_submit": "sales.sales.doctype.flat_invoice.flat_invoice.updateData",
-		#"validate": "sales.sales.doctype.flat_invoice.flat_invoice.validateDoc",
-		#"validate" "sales.sales.doctype.flat_invoice.flat_invoice.insertData",
-		#"validate": "sales.sales.doctype.flat_invoice.flat_invoice.insertData",
-		#"on_update": "sales.sales.doctype.flat_invoice.flat_invoice.updateData"
-		
+
+						"validate":  "sales.sales.doctype.flat_invoice.flat_invoice.beforeInsertDoc",
+						"on_submit": "sales.sales.doctype.flat_invoice.flat_invoice.submitDoc",
+						"on_cancel": "sales.sales.doctype.flat_invoice.flat_invoice.cancelDoc",
+						#"on_update_after_submit":  "sales.sales.doctype.flat_invoice.flat_invoice.amendDoc"
+
 	},
 
 	"Flat Master": {
-		"validate": "sales.sales.doctype.flat_master.flat_master.saveItem",
+		#"validate": "sales.sales.doctype.flat_master.flat_master.saveItem",
 
 	}
 }

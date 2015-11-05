@@ -114,7 +114,7 @@ frappe.ui.form.on("Flat Invoice","rounded_total",function(frm)
 });
 //----------------------Other Charges Calculation------------
 //var ch=cur_frm.fields_dict
-cur_frm.cscript.charges= function(doc) {
+/*cur_frm.cscript.charges= function(doc) {
             var me = this;
             //msgprint("from js Charges function")
             if(0==0) {
@@ -133,8 +133,82 @@ cur_frm.cscript.charges= function(doc) {
                 })
             }
         }
+*/
 
-cur_frm.cscript.discounts= function() {
+
+cur_frm.cscript.charges= function(doc) {
+		var me = this;
+		if(this.frm.doc.charges) {
+			return this.frm.call({
+				method: "erpnext.controllers.accounts_controller.get_taxes_and_charges",
+				args: {
+					"master_doctype": frappe.meta.get_docfield(this.frm.doc.doctype, "charges",
+						this.frm.doc.name).options,
+					"master_name": this.frm.doc.charges,
+				},
+				callback: function(r) {
+					if(!r.exc) {
+						me.frm.set_value("charges_table", r.message);
+						//me.calculate_taxes_and_totals();
+						cur_frm.set_value("event1",doc.charges)
+					}
+				}
+			});
+		}
+	},
+
+//----------------Discount Table
+cur_frm.cscript.discounts= function(doc) {
+		var me = this;
+		if(this.frm.doc.charges) {
+			return this.frm.call({
+				method: "erpnext.controllers.accounts_controller.get_taxes_and_charges",
+				args: {
+					"master_doctype": frappe.meta.get_docfield(this.frm.doc.doctype, "discounts",
+						this.frm.doc.name).options,
+					"master_name": this.frm.doc.discounts,
+				},
+				callback: function(r) {
+					if(!r.exc) {
+						me.frm.set_value("discounts_table", r.message);
+						//me.calculate_taxes_and_totals();
+						cur_frm.set_value("event2",doc.discounts)
+					}
+				}
+			});
+		}
+	},
+
+
+
+//-------------Taxes Tabel
+cur_frm.cscript.taxes= function(doc) {
+		var me = this;
+		if(this.frm.doc.charges) {
+			return this.frm.call({
+				method: "erpnext.controllers.accounts_controller.get_taxes_and_charges",
+				args: {
+					"master_doctype": frappe.meta.get_docfield(this.frm.doc.doctype, "taxes",
+						this.frm.doc.name).options,
+					"master_name": this.frm.doc.taxes,
+				},
+				callback: function(r) {
+					if(!r.exc) {
+						me.frm.set_value("taxes_table", r.message);
+						//me.calculate_taxes_and_totals();
+						cur_frm.set_value("event3",doc.taxes)
+					}
+				}
+			});
+		}
+	},
+
+
+
+
+
+
+/*cur_frm.cscript.discounts= function() {
             var me = this;
             //msgprint("from js Disccount function")
             if(5==5) {
@@ -148,10 +222,10 @@ cur_frm.cscript.discounts= function() {
                 })
             }
         }
+*/		
 		
 		
-		
-cur_frm.cscript.taxes= function() {
+/*cur_frm.cscript.taxes= function() {
             var me = this;
             //msgprint("from js Taxes function")
             if(5==5) {
@@ -165,7 +239,7 @@ cur_frm.cscript.taxes= function() {
                 })
             }
         }
-		
+*/		
 		
 		
 cur_frm.cscript.invoice_flat_no= function() {
@@ -436,30 +510,89 @@ cur_frm.cscript.taxes_table_remove=function(doc, cdt, cdn) {
 };
 
 
-/*cur_frm.save=function(doc, cdt, cdn) { 
+cur_frm.cscript.event1=function(doc, cdt, cdn) {
+    var charge = frappe.get_doc(cdt, cdn);
+	var t=0;
+	var ct=doc.charges_table || [];
+	taxes_totalharge=0.00;
+		for(var i=0;i<ct.length;i++)
+		{
+			if (ct[i].charge_type=="On Net Total")
+			{
+				r=doc.net_total * (ct[i].rate/100)
+				ct[i].tax_amount=r
+			};
+			if (ct[i].charge_type=="Actual")
+			{
+				ct[i].tax_amount= ct[i].tax_amount
+			};
 
-			/*if(5==5) {
-                return this.frm.call({
-                    doc: this.frm.doc,
-                    method: "flatInfo",
-                    callback: function(r) {
-                        if(!r.exc) {
-                        }
-                    }
-                })
-            }
-        }
-//frappe.msgprint("From Save")
-//cur_frm.get_field("Submit")
+			
+		}
+		refresh_field('charges_table');
+
+		for(var i=0;i<ct.length;i++)
+		{
+			t=(ct[i].tax_amount) + t;
+		}
+		cur_frm.set_value("other_charges_total", t);
+};
+
+
+cur_frm.cscript.event2=function(doc, cdt, cdn) {
+
+		var dt=doc.discounts_table || [];
+		var t=0;
+		taxes_totalharge=0.00;
+		for(var i=0;i<dt.length;i++)
+		{
+			if (dt[i].charge_type=="On Net Total")
+			{
+				r=doc.total_a * (dt[i].rate/100)
+				dt[i].tax_amount=r
+			};
+			
+		}
+		refresh_field('discounts_table');
+
+		for(var i=0;i<dt.length;i++)
+		{
+			t=(dt[i].tax_amount) + t;
+		}
+		cur_frm.set_value("discounts_total", t);
+}
+
+cur_frm.cscript.event3=function(doc, cdt, cdn) {
+
+		var tt=doc.taxes_table || [];
+		var t=0;
+		taxes_totalharge=0.00;
+		for(var i=0;i<tt.length;i++)
+		{
+			if (tt[i].charge_type=="On Net Total")
+			{
+				r=doc.total_a * (tt[i].rate/100)
+				tt[i].tax_amount=r
+			};
+			
+		}
+		refresh_field('taxes_table');
+
+		for(var i=0;i<tt.length;i++)
+		{
+			t=(tt[i].tax_amount) + t;
+		}
+		cur_frm.set_value("taxes_total", t);
+
+
 
 };
+
+/*cur_frm.amend_doc=function(doc, cdt, cdn) {
+	var Sdoc = frappe.get_doc("Sales Invoice" ,doc.name);
+	frappe.msgprint(Sdoc)
+};
 */
-frappe.ui.form.on("Flat Invoice","save",function(frm)
-{
-	frappe.msgprint("Yes")
-});
-
-
 
 
 

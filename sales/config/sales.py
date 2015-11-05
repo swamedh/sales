@@ -39,6 +39,11 @@ def get_data():
 					"name": "Floor Rise Master",
 					"description": _("Insert Flat Details")
 				},
+				{
+					"type": "doctype",
+					"name": "Payment Schedule Template",
+					"description": _("Payment Scheme")
+				},
 			]
 		}
 		]

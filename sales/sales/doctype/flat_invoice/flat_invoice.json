@@ -1249,7 +1249,7 @@
  "is_submittable": 1, 
  "issingle": 0, 
  "istable": 0, 
- "modified": "2015-10-22 09:42:23.989304", 
+ "modified": "2015-11-03 19:01:36.920462", 
  "modified_by": "Administrator", 
  "module": "sales", 
  "name": "Flat Invoice", 
@@ -1257,7 +1257,7 @@
  "owner": "Administrator", 
  "permissions": [
   {
-   "amend": 1, 
+   "amend": 0, 
    "apply_user_permissions": 0, 
    "cancel": 1, 
    "create": 1, 

@@ -2,6 +2,7 @@
  "allow_copy": 0, 
  "allow_import": 0, 
  "allow_rename": 0, 
+ "autoname": "field:naming_series", 
  "creation": "2015-09-24 16:13:02.269320", 
  "custom": 0, 
  "docstatus": 0, 
@@ -10,6 +11,8 @@
  "fields": [
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "flat_invoice", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -31,6 +34,8 @@
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "customer_name", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -51,6 +56,8 @@
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "flat_number", 
    "fieldtype": "Data", 
    "hidden": 0, 
@@ -71,6 +78,8 @@
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "total_sales_consideration", 
    "fieldtype": "Currency", 
    "hidden": 0, 
@@ -91,6 +100,8 @@
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "payment_schedule", 
    "fieldtype": "Link", 
    "hidden": 0, 
@@ -112,6 +123,8 @@
   }, 
   {
    "allow_on_submit": 0, 
+   "bold": 0, 
+   "collapsible": 0, 
    "fieldname": "payment_schedule_table", 
    "fieldtype": "Table", 
    "hidden": 0, 
@@ -138,7 +151,7 @@
  "is_submittable": 0, 
  "issingle": 0, 
  "istable": 0, 
- "modified": "2015-09-24 16:13:35.330109", 
+ "modified": "2015-10-31 15:19:42.806386", 
  "modified_by": "Administrator", 
  "module": "sales", 
  "name": "Flat Payment Plan", 
@@ -169,5 +182,6 @@
  "read_only": 0, 
  "read_only_onload": 0, 
  "sort_field": "modified", 
- "sort_order": "DESC"
+ "sort_order": "DESC", 
+ "title_field": "customer_name"
 }
